@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter total students");
+    scanf("%d",&n);
+    int totalmarks[n];
+    int i,large,large2;
+    for(i=0;i<n;i++)
+    {
+       scanf("%d",&totalmarks[i]);
+    }
+    large=totalmarks[0];
+    for(i=0;i<n;i++)
+    {
+       if(totalmarks[i]>large)
+       large=totalmarks[i];
+    }
+    large2=totalmarks[0];
+    for(i=0;i<n;i++)
+    {
+       if(totalmarks[i]==large)
+       {
+          continue;
+       }
+       if(totalmarks[i]>large2)
+       {
+          large2=totalmarks[i];
+       }
+    }
+    printf("the student who got %d marks will host the flag",large2);
+    return 0;
+}   
