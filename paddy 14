@@ -1,0 +1,12 @@
+int a[15],n,1
+printf("Enter desired name\n");
+printf("Enter no. of names\n");
+scanf("%d",&n);
+printf("Enter the names\n");
+for (i=0;i<n;i++)
+scanf("%d",a[i]);
+{
+if(desired name=a[i])
+printf("common name");
+else
+printf("unique name")
