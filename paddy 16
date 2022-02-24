@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct time
+{
+    int d1,mo1,y1,h1,m1;
+};
+int main()
+{
+    struct time n;
+    scanf("%d",&n.d1);
+    scanf("%d",&n.mo1);
+    scanf("%d",&n.y1);
+    scanf("%d",&n.h1);
+    scanf("%d",&n.m1);
+    
+    printf("US ");
+    printf("%d ",n.d1-1);
+    printf("%d ",n.mo1);
+    printf("%d ",n.y1);
+    printf("%d ",n.h1+11);
+    printf("%d\n",n.m1+24);
+    
+    printf("Denmark ");
+    printf("%d ",n.d1-1);
+    printf("%d ",n.mo1);
+    printf("%d ",n.y1);
+    printf("%d ",n.h1+18);
+    printf("%d\n",n.m1+24);
+    
+    printf("Canada ");
+    printf("%d ",n.d1-1);
+    printf("%d ",n.mo1);
+    printf("%d ",n.y1);
+}
