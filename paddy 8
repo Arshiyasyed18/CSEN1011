@@ -1,0 +1,47 @@
+
+Paddy 8
+CODE:
+#include <stdio.h>
+
+int main()
+{
+ int m,n,i,j;
+ scanf("%d%d",&m,&n);
+ int b[m][n];
+ for(i=0;i<m;i++)
+ {
+   for(j=0;j<n;j++)
+   {
+     scanf("%d",&b[i][j]);
+   }
+ }
+ for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+{
+printf("%d",b[i][j]);
+}
+printf("/n");
+}
+int large=b[0][0];
+for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+ {
+   if(b[i][j]>large)
+   {
+     large=b[i][j];
+   }
+  }
+ }
+ for(i=0;i<m;i++)
+ {
+ for(j=0;j<n;j++)
+ {
+  if(large==b[i][j])
+  {
+    printf("Floor#%dFlat#%d\n",i,j);
+  }
+ }
+}
+}
