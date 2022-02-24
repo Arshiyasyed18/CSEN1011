@@ -1,0 +1,40 @@
+#include<stdio.h>
+struct cls
+{
+	char name[100],sec;
+	float cgpa;
+	int rank;
+};
+int main()
+{
+	struct cls c[100];
+	int i,n;
+	printf("Enter the nunber os students:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Name:");
+		scanf("%s",c[i].name);
+		printf("\n");
+		printf("Section:");
+		scanf(" %c",&c[i].sec);
+		printf("\n");
+		printf("CGPA:");
+		scanf("%f",&c[i].cgpa);
+		printf("\n");
+		printf("Rank:");
+		scanf("%d",&c[i].rank);
+		printf("\n");
+	}
+	for(i=0;i<n;i++)
+	{
+		if(c[i].rank<2000)
+		{
+			printf("Name:%s\n",c[i].name);
+			printf("Section:%c\n",c[i].sec);
+			printf("CGPA:%.1f\n",c[i].cgpa);
+			printf("Rank:%d\n",c[i].rank);
+		}
+		
+	}
+}
